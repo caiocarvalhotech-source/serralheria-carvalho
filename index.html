@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serralheria Carvalho | Portões e estruturas metálicas no Canto do Forte</title>
+<meta name="description" content="Serralheria Carvalho: portões, grades, guarda-corpos, coberturas e estruturas metálicas sob medida. Projetos novos e reformas para casas e comércios no Canto do Forte, Praia Grande.">
+<meta name="theme-color" content="#0E0E0F">
+<meta property="og:title" content="Serralheria Carvalho — Canto do Forte">
+<meta property="og:description" content="Portões, grades e estruturas metálicas sob medida. Orçamento pelo WhatsApp.">
+<meta property="og:image" content="/assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="/assets/hero-mobile.webp" media="(max-width: 760px)">
+<link rel="preload" as="image" href="/assets/hero.webp" media="(min-width: 761px)">
+<link rel="preload" href="/assets/fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
+:root{
+  --bg:#0E0E0F; --surface:#151517; --surface-2:#1C1C1F; --line:#2A2A2E;
+  --cream:#F3F0EA; --text:#E9E7E3; --muted:#9C9BA0; --orange:#DE6C2C; --orange-d:#B4501A;
+  --wa:#25D366; --wa-ink:#062814;
+  --r:18px; --max:1180px;
+  --display:"Barlow Condensed", "Arial Narrow", sans-serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--orange)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.02;color:var(--cream);letter-spacing:.005em}
+h2{font-size:clamp(38px,5.4vw,60px);text-transform:uppercase;text-wrap:balance}
+.lead{color:var(--muted);font-size:clamp(16px,1.6vw,19px);max-width:56ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s ease, background .2s ease, box-shadow .2s ease;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 10px 30px -10px rgba(37,211,102,.55)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(37,211,102,.7)}
+.btn-ghost{border:1px solid rgba(243,240,234,.28);color:var(--cream)}
+.btn-ghost:hover{background:rgba(243,240,234,.08)}
+
+/* header */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease, border-color .3s ease;border-bottom:1px solid transparent}
+.top.solid{background:rgba(14,14,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream)}
+.brand-mark{width:34px;height:auto}
+.brand b{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1}
+.brand small{display:block;font-size:10.5px;letter-spacing:.3em;color:var(--muted);font-weight:500;text-transform:uppercase}
+.top nav{display:flex;align-items:center;gap:30px;font-size:15px;color:var(--muted)}
+.top nav a:not(.btn):hover{color:var(--cream)}
+.top .btn{height:44px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 0 80px;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:-4%;z-index:-2;background:url(/assets/hero.webp) 54% 50%/cover no-repeat;animation:drift 22s ease-in-out infinite alternate}
+@media (max-width:760px){.hero-bg{background-image:url(/assets/hero-mobile.webp)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(ellipse 70% 60% at 50% 42%, rgba(14,14,15,.62), rgba(14,14,15,.86) 70%),
+             linear-gradient(180deg, rgba(14,14,15,.55) 0%, rgba(14,14,15,0) 30%, rgba(14,14,15,.2) 65%, var(--bg) 100%)}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.07) translate3d(-1%, -1%, 0)}}
+.hero-inner{display:flex;flex-direction:column;align-items:center}
+.logo-anim{width:clamp(140px,13vw,176px);height:auto;margin-bottom:28px;overflow:visible}
+.hero .eyebrow{opacity:0;animation:up .8s ease 2.5s forwards}
+.hero h1{font-size:clamp(50px,6.6vw,88px);text-transform:uppercase;margin:14px 0 18px;max-width:22ch;text-wrap:balance;opacity:0;animation:up .9s ease 2.65s forwards}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lead{margin:0 auto;opacity:0;animation:up .9s ease 2.8s forwards}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px;opacity:0;animation:up .9s ease 2.95s forwards}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* logo animation (rebuilt from the brand animation) */
+.logo-anim .hx-outer{fill:none;stroke:var(--cream);stroke-width:14;transform-box:fill-box;transform-origin:center;opacity:0;animation:hexIn 1.15s cubic-bezier(.2,.9,.25,1.15) .55s forwards}
+.logo-anim .hx-inner{fill:none;stroke:var(--orange);stroke-width:3;stroke-dasharray:100;stroke-dashoffset:100;animation:draw 1s ease 1.25s forwards}
+.logo-anim .c-arc{fill:none;stroke:var(--orange);stroke-width:22;stroke-dasharray:100;stroke-dashoffset:100;animation:draw .7s cubic-bezier(.6,0,.3,1) .05s forwards}
+.logo-anim .s-mark{fill:var(--cream);transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.2,.9,.3,1.3) .35s forwards}
+.logo-anim .t-serr{fill:#A9A8AE;opacity:0;animation:up .7s ease 1.75s forwards}
+.logo-anim .t-carv{fill:var(--cream);opacity:0;animation:up .7s ease 1.95s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes hexIn{0%{opacity:0;transform:scale(1.35) rotate(-24deg)}55%{opacity:1}100%{opacity:1;transform:none}}
+
+.scroll-cue{position:absolute;left:50%;bottom:26px;width:1px;height:46px;background:linear-gradient(var(--orange),transparent);opacity:0;animation:up 1s ease 3.4s forwards}
+
+/* trust bar */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.trust li{padding:26px 20px;display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--line)}
+.trust li:first-child{border-left:0}
+.trust b{font-family:var(--display);font-size:30px;font-weight:600;color:var(--cream);line-height:1.1;text-transform:uppercase}
+.trust span{font-size:14px;color:var(--muted)}
+
+section{padding:110px 0}
+.head{display:flex;flex-direction:column;gap:16px;margin-bottom:54px}
+.head.center{align-items:center;text-align:center}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.service{background:var(--bg);padding:34px 30px 36px;display:flex;flex-direction:column;gap:12px;transition:background .25s ease}
+.service:hover{background:var(--surface)}
+.service .n{font-family:var(--display);font-size:15px;font-weight:600;letter-spacing:.14em;color:var(--orange)}
+.service h3{font-size:30px;text-transform:uppercase}
+.service p{color:var(--muted);font-size:15.5px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:240px;gap:14px}
+.gallery figure{position:relative;border-radius:14px;overflow:hidden;background:var(--surface);grid-column:span 2}
+.gallery figure.wide{grid-column:span 3;}
+.gallery figure.tall{grid-row:span 2}
+.gallery figure.full{grid-column:1/-1}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover img{transform:scale(1.045)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;font-size:14px;font-weight:500;color:var(--cream);background:linear-gradient(transparent,rgba(10,10,11,.82))}
+
+/* how it works */
+.how{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{position:relative;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.steps .rail{position:absolute;top:44px;left:12.5%;right:12.5%;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.steps .rail i{position:absolute;inset:0;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform 3.4s cubic-bezier(.45,0,.2,1) .3s}
+.steps.run .rail i{transform:scaleX(1)}
+.step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.step .circle{width:90px;height:90px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:2px solid #3A3A3F;color:#8E8D93;transition:background .45s ease, border-color .45s ease, color .45s ease, transform .45s cubic-bezier(.2,.9,.3,1.4)}
+.step .circle svg{width:40px;height:40px}
+.step .k{font-size:12px;font-weight:600;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.step h3{font-size:28px;text-transform:uppercase}
+.step p{color:var(--muted);font-size:15px;max-width:24ch}
+.steps.run .step .circle{background:var(--orange);border-color:var(--orange);color:#1A0E06;transform:scale(1.06)}
+.steps.run .step:nth-child(2) .circle{transition-delay:.1s}
+.steps.run .step:nth-child(3) .circle{transition-delay:1.25s}
+.steps.run .step:nth-child(4) .circle{transition-delay:2.4s}
+.steps.run .step:nth-child(5) .circle{transition-delay:3.55s}
+
+/* cta */
+.cta{position:relative;isolation:isolate;overflow:hidden;text-align:center;padding:130px 0}
+.cta::before{content:"";position:absolute;inset:0;z-index:-2;background:url(/assets/hero.webp) 50% 60%/cover}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--surface) 0%,rgba(14,14,15,.78) 30%,rgba(14,14,15,.82) 70%,var(--bg) 100%)}
+.cta h2{max-width:22ch;margin:0 auto;text-wrap:balance}
+.cta .lead{margin:18px auto 34px}
+
+footer{border-top:1px solid var(--line);padding:44px 0 110px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;color:var(--muted);font-size:14px}
+
+/* floating whatsapp (mobile) */
+.fab{transition:opacity .3s ease, transform .3s ease;opacity:0;transform:translateY(12px);pointer-events:none;position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:60;display:none;align-items:center;gap:10px;height:56px;padding:0 22px;border-radius:999px;background:var(--wa);color:var(--wa-ink);font-weight:600;box-shadow:0 14px 34px -10px rgba(0,0,0,.6)}
+.fab svg{width:22px;height:22px}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .services{grid-template-columns:repeat(2,1fr)}
+  .trust ul{grid-template-columns:repeat(2,1fr)}
+  .trust li:nth-child(3){border-left:0}
+  .trust li:nth-child(n+3){border-top:1px solid var(--line)}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}
+  .gallery figure,.gallery figure.wide{grid-column:span 1}
+  .gallery figure.feature,.gallery figure.m-full,.gallery figure.full{grid-column:1/-1}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  section{padding:80px 0}
+  .top nav a:not(.btn){display:none}
+  .top .btn{display:none}
+  .fab{display:inline-flex}
+  .hero{padding:96px 0 70px}
+  .hero-cta{flex-direction:column;width:100%;max-width:360px}
+  .hero-cta .btn{width:100%}
+  .services{grid-template-columns:1fr}
+  .trust b{font-size:25px}
+  .trust li{padding:20px 16px}
+  .gallery{grid-auto-rows:170px;gap:10px}
+  .gallery figure.tall{grid-row:span 2}
+.gallery figure.full{grid-column:1/-1}
+  .steps{grid-template-columns:1fr;gap:34px;padding-left:4px}
+  .steps .rail{top:45px;bottom:45px;left:44px;right:auto;width:3px;height:auto}
+  .steps .rail i{transform:scaleY(0);transform-origin:top}
+  .steps.run .rail i{transform:scaleY(1)}
+  .step{flex-direction:row;text-align:left;align-items:center;gap:20px}
+  .step .circle{flex:none}
+  .step .txt{display:flex;flex-direction:column;gap:4px}
+  .step h3{font-size:26px}
+  .cta{padding:100px 0}
+  .cta .btn{width:100%;max-width:360px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Serralheria Carvalho — início">
+      <svg class="brand-mark" viewBox="38 6 264 300" aria-hidden="true"><polygon points="170,20 288,88 288,224 170,292 52,224 52,88" fill="none" stroke="currentColor" stroke-width="16"/><path d="M 215.7 120.3 A 58 58 0 1 0 215.7 191.7" fill="none" stroke="#DE6C2C" stroke-width="24"/><path d="M170.04 190.44L170.04 190.44Q160.80 190.44 156.87 186.53Q152.95 182.63 152.57 173.56L152.57 173.56Q152.53 172.21 152.53 170.59Q152.53 168.98 152.61 167.36Q152.70 165.74 152.91 164.40L152.91 164.40L164.75 164.40Q164.58 167.47 164.54 170.45Q164.50 173.43 164.75 175.91L164.75 175.91Q164.96 177.97 166.24 179.08Q167.52 180.19 170.04 180.19L170.04 180.19Q172.52 180.19 173.67 179.08Q174.83 177.97 175.08 175.91L175.08 175.91Q175.25 174.48 175.31 173.07Q175.38 171.67 175.31 170.26Q175.25 168.85 175.08 167.42L175.08 167.42Q174.91 165.66 173.99 164.23Q173.07 162.80 171.05 162.30L171.05 162.30L164.16 160.54Q159.79 159.40 157.23 157.28Q154.67 155.16 153.51 152.01Q152.36 148.86 152.23 144.66L152.23 144.66Q152.19 142.81 152.19 141.36Q152.19 139.91 152.23 138.36L152.23 138.36Q152.49 132.35 154.27 128.66Q156.06 124.96 159.88 123.26Q163.70 121.56 170.04 121.56L170.04 121.56Q178.99 121.56 183.02 125.44Q187.05 129.33 187.43 138.36L187.43 138.36Q187.51 140.17 187.45 142.77Q187.39 145.37 187.26 147.60L187.26 147.60L175.17 147.60Q175.29 144.70 175.33 141.80Q175.38 138.91 175.25 136.01L175.25 136.01Q175.21 133.99 173.80 132.90Q172.39 131.81 170.04 131.81L170.04 131.81Q167.52 131.81 166.30 132.90Q165.09 133.99 164.83 136.01L164.83 136.01Q164.58 138.15 164.58 140.33Q164.58 142.52 164.83 144.66L164.83 144.66Q165.04 146.34 166.01 147.73Q166.98 149.11 169.12 149.62L169.12 149.62L175.08 151.04Q179.79 152.18 182.49 154.38Q185.20 156.59 186.40 159.84Q187.60 163.10 187.77 167.42L187.77 167.42Q187.81 168.39 187.81 169.44Q187.81 170.49 187.77 171.54Q187.72 172.59 187.68 173.56L187.68 173.56Q187.30 182.63 183.33 186.53Q179.37 190.44 170.04 190.44Z" fill="currentColor"/></svg>
+      <span><b>Carvalho</b><small>Serralheria</small></span>
+    </a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a class="btn btn-wa wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5zm0 1.8a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.6.7.7-2.5-.2-.3A7.7 7.7 0 0 1 12 4.3z"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.1.7.5 0 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9z"/></svg>Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <svg class="logo-anim" viewBox="40 8 260 392" role="img" aria-label="Serralheria Carvalho">
+  <polygon class="hx-outer" points="170,20 288,88 288,224 170,292 52,224 52,88"/>
+  <polygon class="hx-inner" points="170,38.2 272,97.1 272,214.9 170,273.8 68,214.9 68,97.1" pathLength="100"/>
+  <path class="c-arc" d="M 215.7 120.3 A 58 58 0 1 0 215.7 191.7" pathLength="100"/>
+  <path class="s-mark" d="M170.04 190.44L170.04 190.44Q160.80 190.44 156.87 186.53Q152.95 182.63 152.57 173.56L152.57 173.56Q152.53 172.21 152.53 170.59Q152.53 168.98 152.61 167.36Q152.70 165.74 152.91 164.40L152.91 164.40L164.75 164.40Q164.58 167.47 164.54 170.45Q164.50 173.43 164.75 175.91L164.75 175.91Q164.96 177.97 166.24 179.08Q167.52 180.19 170.04 180.19L170.04 180.19Q172.52 180.19 173.67 179.08Q174.83 177.97 175.08 175.91L175.08 175.91Q175.25 174.48 175.31 173.07Q175.38 171.67 175.31 170.26Q175.25 168.85 175.08 167.42L175.08 167.42Q174.91 165.66 173.99 164.23Q173.07 162.80 171.05 162.30L171.05 162.30L164.16 160.54Q159.79 159.40 157.23 157.28Q154.67 155.16 153.51 152.01Q152.36 148.86 152.23 144.66L152.23 144.66Q152.19 142.81 152.19 141.36Q152.19 139.91 152.23 138.36L152.23 138.36Q152.49 132.35 154.27 128.66Q156.06 124.96 159.88 123.26Q163.70 121.56 170.04 121.56L170.04 121.56Q178.99 121.56 183.02 125.44Q187.05 129.33 187.43 138.36L187.43 138.36Q187.51 140.17 187.45 142.77Q187.39 145.37 187.26 147.60L187.26 147.60L175.17 147.60Q175.29 144.70 175.33 141.80Q175.38 138.91 175.25 136.01L175.25 136.01Q175.21 133.99 173.80 132.90Q172.39 131.81 170.04 131.81L170.04 131.81Q167.52 131.81 166.30 132.90Q165.09 133.99 164.83 136.01L164.83 136.01Q164.58 138.15 164.58 140.33Q164.58 142.52 164.83 144.66L164.83 144.66Q165.04 146.34 166.01 147.73Q166.98 149.11 169.12 149.62L169.12 149.62L175.08 151.04Q179.79 152.18 182.49 154.38Q185.20 156.59 186.40 159.84Q187.60 163.10 187.77 167.42L187.77 167.42Q187.81 168.39 187.81 169.44Q187.81 170.49 187.77 171.54Q187.72 172.59 187.68 173.56L187.68 173.56Q187.30 182.63 183.33 186.53Q179.37 190.44 170.04 190.44Z"/>
+  <path class="t-serr" d="M78.60 346.18Q76.86 346.18 75.80 345.09Q74.73 344.00 74.73 342.24L74.73 342.24L74.73 341.67Q74.73 341.45 74.95 341.45L74.95 341.45L76.58 341.45Q76.80 341.45 76.80 341.67L76.80 341.67L76.80 342.13Q76.80 343.14 77.30 343.75Q77.81 344.35 78.60 344.35L78.60 344.35Q79.39 344.35 79.91 343.77Q80.43 343.18 80.43 342.24L80.43 342.24Q80.43 341.60 80.15 341.12Q79.88 340.63 79.43 340.25Q78.98 339.86 77.96 339.11L77.96 339.11Q76.84 338.28 76.20 337.68Q75.57 337.09 75.13 336.25Q74.69 335.42 74.69 334.30L74.69 334.30Q74.69 332.51 75.74 331.47Q76.80 330.42 78.49 330.42L78.49 330.42Q80.25 330.42 81.32 331.55Q82.39 332.67 82.39 334.49L82.39 334.49L82.39 335.04Q82.39 335.26 82.17 335.26L82.17 335.26L80.54 335.26Q80.32 335.26 80.32 335.04L80.32 335.04L80.32 334.45Q80.32 333.46 79.81 332.86Q79.31 332.25 78.49 332.25L78.49 332.25Q77.72 332.25 77.24 332.79Q76.75 333.33 76.75 334.30L76.75 334.30Q76.75 335.18 77.24 335.78Q77.72 336.39 79.11 337.40L79.11 337.40Q80.43 338.39 81.10 339.00Q81.77 339.62 82.13 340.36Q82.50 341.09 82.50 342.11L82.50 342.11Q82.50 343.95 81.42 345.06Q80.34 346.18 78.60 346.18L78.60 346.18ZM101 332.21Q101 332.43 100.78 332.43L100.78 332.43L95.83 332.43Q95.74 332.43 95.74 332.51L95.74 332.51L95.74 337.29Q95.74 337.38 95.83 337.38L95.83 337.38L98.87 337.38Q99.09 337.38 99.09 337.60L99.09 337.60L99.09 338.98Q99.09 339.20 98.87 339.20L98.87 339.20L95.83 339.20Q95.74 339.20 95.74 339.29L95.74 339.29L95.74 344.09Q95.74 344.17 95.83 344.17L95.83 344.17L100.78 344.17Q101 344.17 101 344.39L101 344.39L101 345.78Q101 346 100.78 346L100.78 346L93.85 346Q93.63 346 93.63 345.78L93.63 345.78L93.63 330.82Q93.63 330.60 93.85 330.60L93.85 330.60L100.78 330.60Q101 330.60 101 330.82L101 330.82L101 332.21ZM118.25 346Q118.05 346 117.99 345.82L117.99 345.82L115.96 339.27Q115.94 339.20 115.87 339.20L115.87 339.20L114.33 339.20Q114.25 339.20 114.25 339.29L114.25 339.29L114.25 345.78Q114.25 346 114.03 346L114.03 346L112.35 346Q112.13 346 112.13 345.78L112.13 345.78L112.13 330.82Q112.13 330.60 112.35 330.60L112.35 330.60L116.29 330.60Q117.41 330.60 118.27 331.15Q119.13 331.70 119.60 332.70Q120.08 333.70 120.08 334.98L120.08 334.98Q120.08 336.36 119.50 337.39Q118.93 338.41 117.94 338.87L117.94 338.87Q117.88 338.94 117.90 339.00L117.90 339.00L120.14 345.76L120.16 345.85Q120.16 346 119.97 346L119.97 346L118.25 346ZM114.33 332.43Q114.25 332.43 114.25 332.51L114.25 332.51L114.25 337.44Q114.25 337.53 114.33 337.53L114.33 337.53L115.96 337.53Q116.86 337.53 117.41 336.84Q117.96 336.14 117.96 335L117.96 335Q117.96 333.81 117.41 333.12Q116.86 332.43 115.96 332.43L115.96 332.43L114.33 332.43ZM137.22 346Q137.02 346 136.95 345.82L136.95 345.82L134.93 339.27Q134.91 339.20 134.84 339.20L134.84 339.20L133.30 339.20Q133.21 339.20 133.21 339.29L133.21 339.29L133.21 345.78Q133.21 346 132.99 346L132.99 346L131.32 346Q131.10 346 131.10 345.78L131.10 345.78L131.10 330.82Q131.10 330.60 131.32 330.60L131.32 330.60L135.26 330.60Q136.38 330.60 137.24 331.15Q138.10 331.70 138.57 332.70Q139.04 333.70 139.04 334.98L139.04 334.98Q139.04 336.36 138.47 337.39Q137.90 338.41 136.91 338.87L136.91 338.87Q136.84 338.94 136.86 339.00L136.86 339.00L139.11 345.76L139.13 345.85Q139.13 346 138.93 346L138.93 346L137.22 346ZM133.30 332.43Q133.21 332.43 133.21 332.51L133.21 332.51L133.21 337.44Q133.21 337.53 133.30 337.53L133.30 337.53L134.93 337.53Q135.83 337.53 136.38 336.84Q136.93 336.14 136.93 335L136.93 335Q136.93 333.81 136.38 333.12Q135.83 332.43 134.93 332.43L134.93 332.43L133.30 332.43ZM156.09 346Q155.90 346 155.85 345.80L155.85 345.80L155.37 343.27Q155.37 343.23 155.34 343.21Q155.30 343.18 155.26 343.18L155.26 343.18L151.67 343.18Q151.63 343.18 151.59 343.21Q151.56 343.23 151.56 343.27L151.56 343.27L151.10 345.80Q151.08 346 150.86 346L150.86 346L149.19 346Q149.08 346 149.02 345.93Q148.97 345.87 148.99 345.76L148.99 345.76L152.27 330.80Q152.31 330.60 152.51 330.60L152.51 330.60L154.47 330.60Q154.69 330.60 154.71 330.80L154.71 330.80L158.01 345.76L158.01 345.80Q158.01 346 157.81 346L157.81 346L156.09 346ZM151.94 341.42Q151.94 341.51 152.00 341.51L152.00 341.51L154.93 341.51Q154.99 341.51 154.99 341.42L154.99 341.42L153.50 333.61Q153.48 333.57 153.45 333.57Q153.43 333.57 153.41 333.61L153.41 333.61L151.94 341.42ZM168.88 346Q168.66 346 168.66 345.78L168.66 345.78L168.66 330.82Q168.66 330.60 168.88 330.60L168.88 330.60L170.55 330.60Q170.77 330.60 170.77 330.82L170.77 330.82L170.77 344.09Q170.77 344.17 170.86 344.17L170.86 344.17L175.79 344.17Q176.01 344.17 176.01 344.39L176.01 344.39L176.01 345.78Q176.01 346 175.79 346L175.79 346L168.88 346ZM192.22 330.82Q192.22 330.60 192.44 330.60L192.44 330.60L194.11 330.60Q194.33 330.60 194.33 330.82L194.33 330.82L194.33 345.78Q194.33 346 194.11 346L194.11 346L192.44 346Q192.22 346 192.22 345.78L192.22 345.78L192.22 339.29Q192.22 339.20 192.13 339.20L192.13 339.20L188.81 339.20Q188.72 339.20 188.72 339.29L188.72 339.29L188.72 345.78Q188.72 346 188.50 346L188.50 346L186.83 346Q186.61 346 186.61 345.78L186.61 345.78L186.61 330.82Q186.61 330.60 186.83 330.60L186.83 330.60L188.50 330.60Q188.72 330.60 188.72 330.82L188.72 330.82L188.72 337.29Q188.72 337.38 188.81 337.38L188.81 337.38L192.13 337.38Q192.22 337.38 192.22 337.29L192.22 337.29L192.22 330.82ZM213.43 332.21Q213.43 332.43 213.21 332.43L213.21 332.43L208.26 332.43Q208.17 332.43 208.17 332.51L208.17 332.51L208.17 337.29Q208.17 337.38 208.26 337.38L208.26 337.38L211.30 337.38Q211.52 337.38 211.52 337.60L211.52 337.60L211.52 338.98Q211.52 339.20 211.30 339.20L211.30 339.20L208.26 339.20Q208.17 339.20 208.17 339.29L208.17 339.29L208.17 344.09Q208.17 344.17 208.26 344.17L208.26 344.17L213.21 344.17Q213.43 344.17 213.43 344.39L213.43 344.39L213.43 345.78Q213.43 346 213.21 346L213.21 346L206.28 346Q206.06 346 206.06 345.78L206.06 345.78L206.06 330.82Q206.06 330.60 206.28 330.60L206.28 330.60L213.21 330.60Q213.43 330.60 213.43 330.82L213.43 330.82L213.43 332.21ZM230.68 346Q230.48 346 230.42 345.82L230.42 345.82L228.39 339.27Q228.37 339.20 228.31 339.20L228.31 339.20L226.77 339.20Q226.68 339.20 226.68 339.29L226.68 339.29L226.68 345.78Q226.68 346 226.46 346L226.46 346L224.79 346Q224.57 346 224.57 345.78L224.57 345.78L224.57 330.82Q224.57 330.60 224.79 330.60L224.79 330.60L228.72 330.60Q229.85 330.60 230.70 331.15Q231.56 331.70 232.03 332.70Q232.51 333.70 232.51 334.98L232.51 334.98Q232.51 336.36 231.94 337.39Q231.36 338.41 230.37 338.87L230.37 338.87Q230.31 338.94 230.33 339.00L230.33 339.00L232.57 345.76L232.60 345.85Q232.60 346 232.40 346L232.40 346L230.68 346ZM226.77 332.43Q226.68 332.43 226.68 332.51L226.68 332.51L226.68 337.44Q226.68 337.53 226.77 337.53L226.77 337.53L228.39 337.53Q229.30 337.53 229.85 336.84Q230.40 336.14 230.40 335L230.40 335Q230.40 333.81 229.85 333.12Q229.30 332.43 228.39 332.43L228.39 332.43L226.77 332.43ZM243.75 346Q243.53 346 243.53 345.78L243.53 345.78L243.53 330.82Q243.53 330.60 243.75 330.60L243.75 330.60L245.42 330.60Q245.64 330.60 245.64 330.82L245.64 330.82L245.64 345.78Q245.64 346 245.42 346L245.42 346L243.75 346ZM263.40 346Q263.20 346 263.16 345.80L263.16 345.80L262.67 343.27Q262.67 343.23 262.64 343.21Q262.61 343.18 262.56 343.18L262.56 343.18L258.98 343.18Q258.93 343.18 258.90 343.21Q258.87 343.23 258.87 343.27L258.87 343.27L258.41 345.80Q258.38 346 258.16 346L258.16 346L256.49 346Q256.38 346 256.33 345.93Q256.27 345.87 256.29 345.76L256.29 345.76L259.57 330.80Q259.62 330.60 259.81 330.60L259.81 330.60L261.77 330.60Q261.99 330.60 262.01 330.80L262.01 330.80L265.31 345.76L265.31 345.80Q265.31 346 265.12 346L265.12 346L263.40 346ZM259.24 341.42Q259.24 341.51 259.31 341.51L259.31 341.51L262.23 341.51Q262.30 341.51 262.30 341.42L262.30 341.42L260.80 333.61Q260.78 333.57 260.76 333.57Q260.74 333.57 260.72 333.61L260.72 333.61L259.24 341.42Z"/>
+  <path class="t-carv" d="M81 388.32Q77.20 388.32 74.92 386.08Q72.64 383.84 72.64 380.12L72.64 380.12L72.64 367.84Q72.64 364.08 74.92 361.88Q77.20 359.68 81 359.68L81 359.68Q84.80 359.68 87.10 361.88Q89.40 364.08 89.40 367.84L89.40 367.84L89.40 368.20Q89.40 368.40 89.26 368.54Q89.12 368.68 88.92 368.68L88.92 368.68L83.24 368.92Q82.76 368.92 82.76 368.44L82.76 368.44L82.76 367.36Q82.76 366.44 82.28 365.90Q81.80 365.36 81 365.36L81 365.36Q80.24 365.36 79.76 365.90Q79.28 366.44 79.28 367.36L79.28 367.36L79.28 380.68Q79.28 381.56 79.76 382.10Q80.24 382.64 81 382.64L81 382.64Q81.80 382.64 82.28 382.10Q82.76 381.56 82.76 380.68L82.76 380.68L82.76 379.52Q82.76 379.32 82.90 379.18Q83.04 379.04 83.24 379.04L83.24 379.04L88.92 379.28Q89.12 379.28 89.26 379.42Q89.40 379.56 89.40 379.76L89.40 379.76L89.40 380.12Q89.40 383.84 87.10 386.08Q84.80 388.32 81 388.32L81 388.32ZM109.88 388Q109.40 388 109.36 387.56L109.36 387.56L108.84 384.08Q108.84 383.88 108.60 383.88L108.60 383.88L104.28 383.88Q104.04 383.88 104.04 384.08L104.04 384.08L103.56 387.56Q103.52 388 103.04 388L103.04 388L97.36 388Q96.84 388 96.96 387.48L96.96 387.48L102.76 360.44Q102.84 360 103.28 360L103.28 360L109.80 360Q110.24 360 110.32 360.44L110.32 360.44L116.08 387.48L116.12 387.64Q116.12 388 115.68 388L115.68 388L109.88 388ZM104.92 378.56Q104.92 378.76 105.08 378.76L105.08 378.76L107.76 378.76Q107.92 378.76 107.92 378.56L107.92 378.56L106.48 369.44Q106.44 369.28 106.36 369.28Q106.28 369.28 106.24 369.44L106.24 369.44L104.92 378.56ZM135 388Q134.56 388 134.44 387.60L134.44 387.60L131.72 377Q131.68 376.84 131.52 376.84L131.52 376.84L130.92 376.84Q130.72 376.84 130.72 377.04L130.72 377.04L130.72 387.52Q130.72 387.72 130.58 387.86Q130.44 388 130.24 388L130.24 388L124.56 388Q124.36 388 124.22 387.86Q124.08 387.72 124.08 387.52L124.08 387.52L124.08 360.48Q124.08 360.28 124.22 360.14Q124.36 360 124.56 360L124.56 360L133.16 360Q135.48 360 137.28 361.10Q139.08 362.20 140.06 364.18Q141.04 366.16 141.04 368.68L141.04 368.68Q141.04 370.92 140.22 372.70Q139.40 374.48 137.92 375.56L137.92 375.56Q137.84 375.60 137.80 375.66Q137.76 375.72 137.80 375.80L137.80 375.80L141.24 387.44L141.28 387.60Q141.28 388 140.84 388L140.84 388L135 388ZM130.92 365.68Q130.72 365.68 130.72 365.88L130.72 365.88L130.72 371.56Q130.72 371.76 130.92 371.76L130.92 371.76L132.04 371.76Q133.12 371.76 133.76 370.96Q134.40 370.16 134.40 368.76L134.40 368.76Q134.40 367.28 133.76 366.48Q133.12 365.68 132.04 365.68L132.04 365.68L130.92 365.68ZM154.88 388Q154.44 388 154.36 387.56L154.36 387.56L148.68 360.52L148.64 360.36Q148.64 360 149.08 360L149.08 360L155.28 360Q155.76 360 155.80 360.44L155.80 360.44L158.08 376.40Q158.12 376.56 158.22 376.54Q158.32 376.52 158.32 376.40L158.32 376.40L160.44 360.44Q160.48 360 160.96 360L160.96 360L167.00 360Q167.52 360 167.40 360.52L167.40 360.52L161.68 387.56Q161.60 388 161.16 388L161.16 388L154.88 388ZM187.68 388Q187.20 388 187.16 387.56L187.16 387.56L186.64 384.08Q186.64 383.88 186.40 383.88L186.40 383.88L182.08 383.88Q181.84 383.88 181.84 384.08L181.84 384.08L181.36 387.56Q181.32 388 180.84 388L180.84 388L175.16 388Q174.64 388 174.76 387.48L174.76 387.48L180.56 360.44Q180.64 360 181.08 360L181.08 360L187.60 360Q188.04 360 188.12 360.44L188.12 360.44L193.88 387.48L193.92 387.64Q193.92 388 193.48 388L193.48 388L187.68 388ZM182.72 378.56Q182.72 378.76 182.88 378.76L182.88 378.76L185.56 378.76Q185.72 378.76 185.72 378.56L185.72 378.56L184.28 369.44Q184.24 369.28 184.16 369.28Q184.08 369.28 184.04 369.44L184.04 369.44L182.72 378.56ZM202.36 388Q202.16 388 202.02 387.86Q201.88 387.72 201.88 387.52L201.88 387.52L201.88 360.48Q201.88 360.28 202.02 360.14Q202.16 360 202.36 360L202.36 360L208.04 360Q208.24 360 208.38 360.14Q208.52 360.28 208.52 360.48L208.52 360.48L208.52 382.12Q208.52 382.32 208.72 382.32L208.72 382.32L216.88 382.32Q217.08 382.32 217.22 382.46Q217.36 382.60 217.36 382.80L217.36 382.80L217.36 387.52Q217.36 387.72 217.22 387.86Q217.08 388 216.88 388L216.88 388L202.36 388ZM235.28 360.48Q235.28 360.28 235.42 360.14Q235.56 360 235.76 360L235.76 360L241.44 360Q241.64 360 241.78 360.14Q241.92 360.28 241.92 360.48L241.92 360.48L241.92 387.52Q241.92 387.72 241.78 387.86Q241.64 388 241.44 388L241.44 388L235.76 388Q235.56 388 235.42 387.86Q235.28 387.72 235.28 387.52L235.28 387.52L235.28 377.04Q235.28 376.84 235.08 376.84L235.08 376.84L232.20 376.84Q232.00 376.84 232.00 377.04L232.00 377.04L232.00 387.52Q232.00 387.72 231.86 387.86Q231.72 388 231.52 388L231.52 388L225.84 388Q225.64 388 225.50 387.86Q225.36 387.72 225.36 387.52L225.36 387.52L225.36 360.48Q225.36 360.28 225.50 360.14Q225.64 360 225.84 360L225.84 360L231.52 360Q231.72 360 231.86 360.14Q232.00 360.28 232.00 360.48L232.00 360.48L232.00 370.92Q232.00 371.12 232.20 371.12L232.20 371.12L235.08 371.12Q235.28 371.12 235.28 370.92L235.28 370.92L235.28 360.48ZM258.84 388.32Q254.96 388.32 252.66 386.08Q250.36 383.84 250.36 380.04L250.36 380.04L250.36 367.96Q250.36 364.20 252.66 361.94Q254.96 359.68 258.84 359.68L258.84 359.68Q262.68 359.68 265.02 361.94Q267.36 364.20 267.36 367.96L267.36 367.96L267.36 380.04Q267.36 383.84 265.02 386.08Q262.68 388.32 258.84 388.32L258.84 388.32ZM258.84 382.64Q259.72 382.64 260.22 382.02Q260.72 381.40 260.72 380.32L260.72 380.32L260.72 367.68Q260.72 366.60 260.22 365.98Q259.72 365.36 258.84 365.36L258.84 365.36Q257.96 365.36 257.48 365.98Q257 366.60 257 367.68L257 367.68L257 380.32Q257 381.40 257.48 382.02Q257.96 382.64 258.84 382.64L258.84 382.64Z"/>
+</svg>
+      <span class="eyebrow">Canto do Forte · Praia Grande</span>
+      <h1>Portões, grades e estruturas <em>sob medida</em></h1>
+      <p class="lead">Há 21 anos fazendo projetos novos e reformas para casas e comércios da região, com acabamento de quem entende do assunto.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5zm0 1.8a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.6.7.7-2.5-.2-.3A7.7 7.7 0 0 1 12 4.3z"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.1.7.5 0 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9z"/></svg>Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-ghost" href="#trabalhos">Ver trabalhos</a>
+      </div>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
+
+  <div class="trust">
+    <ul class="wrap">
+      <li><b>21 anos</b><span>de tradição no bairro</span></li>
+      <li><b>Novos e reformas</b><span>do projeto à instalação</span></li>
+      <li><b>Casas e comércios</b><span>atendimento residencial e comercial</span></li>
+      <li><b>Sob medida</b><span>medidas tiradas no local</span></li>
+    </ul>
+  </div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="eyebrow">Serviços</span>
+        <h2>O que a gente faz</h2>
+        <p class="lead">Tudo fabricado na nossa serralheria, sob medida para o seu espaço.</p>
+      </div>
+      <div class="services rv">
+        <article class="service"><span class="n">01</span><h3>Portões</h3><p>Portões de garagem e sociais, em chapa, lâminas ou com detalhes vazados.</p></article>
+        <article class="service"><span class="n">02</span><h3>Grades e guarda-corpos</h3><p>Proteção para janelas, muros, sacadas e piscinas, sem abrir mão da estética.</p></article>
+        <article class="service"><span class="n">03</span><h3>Estruturas metálicas</h3><p>Estruturas metálicas para obras e coberturas, com montagem no local.</p></article>
+        <article class="service"><span class="n">04</span><h3>Coberturas</h3><p>Coberturas para garagens, áreas de lazer e comércios.</p></article>
+        <article class="service"><span class="n">05</span><h3>Fachadas</h3><p>Detalhes metálicos que valorizam a frente da sua casa ou do seu comércio.</p></article>
+        <article class="service"><span class="n">06</span><h3>Reformas</h3><p>Recuperação, ajustes e pintura de portões e estruturas que já existem.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalhos" style="padding-top:0">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="eyebrow">Trabalhos</span>
+        <h2>Feito por nós na região</h2>
+      </div>
+      <div class="gallery">
+        <figure class="rv feature wide tall"><img src="/assets/portao-marrom.webp" srcset="/assets/portao-marrom-720.webp 720w, /assets/portao-marrom.webp 1200w" sizes="(max-width:960px) 100vw, 50vw" alt="Portão de garagem marrom com lâminas verticais" loading="lazy"><figcaption>Portão residencial</figcaption></figure>
+        <figure class="rv wide"><img src="/assets/guarda-corpo.webp" srcset="/assets/guarda-corpo-720.webp 720w, /assets/guarda-corpo.webp 1200w" sizes="(max-width:960px) 50vw, 50vw" alt="Guarda-corpo preto ao redor de piscina" loading="lazy"><figcaption>Guarda-corpo de piscina</figcaption></figure>
+        <figure class="rv wide"><img src="/assets/estrutura.webp" srcset="/assets/estrutura-720.webp 720w, /assets/estrutura.webp 1200w" sizes="(max-width:960px) 50vw, 50vw" alt="Estrutura metálica galvanizada em construção" loading="lazy"><figcaption>Estrutura metálica</figcaption></figure>
+        <figure class="rv"><img src="/assets/portao-oliva-720.webp" alt="Portão de garagem verde oliva com detalhe vazado" loading="lazy"><figcaption>Portão com detalhe vazado</figcaption></figure>
+        <figure class="rv"><img src="/assets/portoes-brancos-720.webp" alt="Dois portões brancos de garagem" loading="lazy"><figcaption>Portões de garagem</figcaption></figure>
+        <figure class="rv m-full"><img src="/assets/portao-azul-720.webp" alt="Portão com lâminas diagonais em muro azul" loading="lazy"><figcaption>Portão com lâminas diagonais</figcaption></figure>
+        <figure class="rv full"><img src="/assets/cobertura.webp" srcset="/assets/cobertura-720.webp 720w, /assets/cobertura.webp 1200w" sizes="100vw" alt="Cobertura vermelha sobre área de lazer" loading="lazy" style="object-position:50% 40%"><figcaption>Cobertura para área de lazer</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <div class="head center rv">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do WhatsApp à instalação</h2>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="rail" aria-hidden="true"><i></i></li>
+        <li class="step"><span class="circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"><rect x="6" y="9" width="36" height="25" rx="8"/><path d="M15 34l-4 8 11-8" fill="currentColor" stroke="none"/><circle cx="16" cy="21.5" r="2.2" fill="currentColor" stroke="none"/><circle cx="24" cy="21.5" r="2.2" fill="currentColor" stroke="none"/><circle cx="32" cy="21.5" r="2.2" fill="currentColor" stroke="none"/></svg></span><span class="txt"><span class="k">Passo 1</span><h3>WhatsApp</h3><p>Você chama a gente e conta o que precisa.</p></span></li>
+        <li class="step"><span class="circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><rect x="4" y="16" width="40" height="16" rx="3"/><path d="M9 16v5M14 16v8M19 16v5M24 16v8M29 16v5M34 16v8M39 16v5" stroke-width="2"/></svg></span><span class="txt"><span class="k">Passo 2</span><h3>Visita</h3><p>Marcamos uma visita e tiramos as medidas no local.</p></span></li>
+        <li class="step"><span class="circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6"><rect x="6" y="9" width="36" height="30"/><path d="M12 9v30M18 9v30M24 9v30M30 9v30M36 9v30M6 24h36" stroke-width="2"/></svg></span><span class="txt"><span class="k">Passo 3</span><h3>Fabricação</h3><p>Construímos tudo sob medida na nossa serralheria.</p></span></li>
+        <li class="step"><span class="circle"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 23L24 7l20 16"/><path d="M10 19v22h28V19"/><rect x="17" y="27" width="14" height="14" stroke-width="2.2"/><path d="M20.5 27v14M24 27v14M27.5 27v14" stroke-width="1.8"/></svg></span><span class="txt"><span class="k">Passo 4</span><h3>Instalação</h3><p>Levamos até você e instalamos tudo.</p></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta" id="orcamento">
+    <div class="wrap">
+      <span class="eyebrow rv">Orçamento pelo WhatsApp</span>
+      <h2 class="rv" style="margin-top:16px">Precisa de um serviço de serralheria?</h2>
+      <p class="lead rv">Chama a gente no WhatsApp e marque uma visita para tirar as medidas.</p>
+      <a class="btn btn-wa wa rv" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5zm0 1.8a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.6.7.7-2.5-.2-.3A7.7 7.7 0 0 1 12 4.3z"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.1.7.5 0 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9z"/></svg>Chamar no WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg class="brand-mark" viewBox="38 6 264 300" aria-hidden="true"><polygon points="170,20 288,88 288,224 170,292 52,224 52,88" fill="none" stroke="currentColor" stroke-width="16"/><path d="M 215.7 120.3 A 58 58 0 1 0 215.7 191.7" fill="none" stroke="#DE6C2C" stroke-width="24"/><path d="M170.04 190.44L170.04 190.44Q160.80 190.44 156.87 186.53Q152.95 182.63 152.57 173.56L152.57 173.56Q152.53 172.21 152.53 170.59Q152.53 168.98 152.61 167.36Q152.70 165.74 152.91 164.40L152.91 164.40L164.75 164.40Q164.58 167.47 164.54 170.45Q164.50 173.43 164.75 175.91L164.75 175.91Q164.96 177.97 166.24 179.08Q167.52 180.19 170.04 180.19L170.04 180.19Q172.52 180.19 173.67 179.08Q174.83 177.97 175.08 175.91L175.08 175.91Q175.25 174.48 175.31 173.07Q175.38 171.67 175.31 170.26Q175.25 168.85 175.08 167.42L175.08 167.42Q174.91 165.66 173.99 164.23Q173.07 162.80 171.05 162.30L171.05 162.30L164.16 160.54Q159.79 159.40 157.23 157.28Q154.67 155.16 153.51 152.01Q152.36 148.86 152.23 144.66L152.23 144.66Q152.19 142.81 152.19 141.36Q152.19 139.91 152.23 138.36L152.23 138.36Q152.49 132.35 154.27 128.66Q156.06 124.96 159.88 123.26Q163.70 121.56 170.04 121.56L170.04 121.56Q178.99 121.56 183.02 125.44Q187.05 129.33 187.43 138.36L187.43 138.36Q187.51 140.17 187.45 142.77Q187.39 145.37 187.26 147.60L187.26 147.60L175.17 147.60Q175.29 144.70 175.33 141.80Q175.38 138.91 175.25 136.01L175.25 136.01Q175.21 133.99 173.80 132.90Q172.39 131.81 170.04 131.81L170.04 131.81Q167.52 131.81 166.30 132.90Q165.09 133.99 164.83 136.01L164.83 136.01Q164.58 138.15 164.58 140.33Q164.58 142.52 164.83 144.66L164.83 144.66Q165.04 146.34 166.01 147.73Q166.98 149.11 169.12 149.62L169.12 149.62L175.08 151.04Q179.79 152.18 182.49 154.38Q185.20 156.59 186.40 159.84Q187.60 163.10 187.77 167.42L187.77 167.42Q187.81 168.39 187.81 169.44Q187.81 170.49 187.77 171.54Q187.72 172.59 187.68 173.56L187.68 173.56Q187.30 182.63 183.33 186.53Q179.37 190.44 170.04 190.44Z" fill="currentColor"/></svg><span><b>Carvalho</b><small>Serralheria</small></span></a>
+    <span>Canto do Forte · Praia Grande – SP</span>
+    <span>© 2026 Serralheria Carvalho</span>
+  </div>
+</footer>
+
+<a class="fab wa" href="#" target="_blank" rel="noopener" aria-label="Pedir orçamento no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5zm0 1.8a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.6.7.7-2.5-.2-.3A7.7 7.7 0 0 1 12 4.3z"/><path d="M9.1 7.6c-.2-.4-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.1.7.5 0 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9z"/></svg>Orçamento</a>
+
+<script>
+(function(){
+  var WHATSAPP = "5511910356274";
+  var MSG = "Olá! Vim pelo site da Serralheria Carvalho e gostaria de um orçamento.";
+  var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MSG);
+  document.querySelectorAll("a.wa").forEach(function(a){ a.href = url; });
+
+  var top = document.getElementById("top");
+  var fab = document.querySelector(".fab");
+  var onScroll = function(){ top.classList.toggle("solid", window.scrollY > 40); fab.classList.toggle("show", window.scrollY > window.innerHeight * 0.8); };
+  onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
+
+  if (!("IntersectionObserver" in window)) {
+    document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
+    document.getElementById("steps").classList.add("run"); return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:.15, rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+  var steps = document.getElementById("steps");
+  var so = new IntersectionObserver(function(entries){
+    if (entries[0].isIntersecting){ steps.classList.add("run"); so.disconnect(); }
+  }, {threshold:.45});
+  so.observe(steps);
+})();
+</script>
+</body>
+</html>
